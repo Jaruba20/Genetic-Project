@@ -6,9 +6,11 @@ This library, inspired by Scikit_Learns's machine learning modules, provides a c
 
 - **Optimization Class**: The main class in this library. It takes a numpy array of cities as input.
 
-- **Optimize Method**: This method is used to run the optimization process. It has several parameters that can be adjusted according to the needs of the problem.
+- **Optimization.optimize()**: This method is used to run the optimization process. It has several parameters that can be adjusted according to the needs of the problem.
 
-- **Grid**: Much like GridSearch in Scikit-Learn, this class is designed to iterate over different parameters of the Optimization class and obtain the best results (shortest route), returning also the parameters used in that iteration.
+- **Grid Class**: Much like GridSearch in Scikit-Learn, this class is designed to iterate over different parameters of the Optimization class and obtain the best results (shortest route), returning also the parameters used in that iteration.
+  
+- **Grid.iterate()**: Method to apply the grid search, iterating over all the possible iterations of the parameters passed as a dictionary. 
 
 
 ## Usage
