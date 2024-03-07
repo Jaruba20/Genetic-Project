@@ -5,11 +5,11 @@ import itertools
 class Grid:
     """Class to iterate over different parameters of the Optimization class and obtain the best results."""
 
-    def __init__(self, cities, dict_of_parameters):
+    def __init__(self, optimization: Optimization, dict_of_parameters):
         """Constructor of the class.
         :param dict_of_parameters: Dictionary with the parameters to iterate over.
         """
-        self.cities = cities
+        self.cities = optimization.cities
         self.dict_of_parameters = dict_of_parameters
         self.best_result = None
         self.best_parameters = None
