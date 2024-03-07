@@ -30,8 +30,11 @@ opt.optimize()
 
 ###########################
 # Grid Search
+from Optimization import Optimization
 from Grid import Grid
 import numpy as np
+
+opt = Optimization(cities)
 
 # Define parameters to iterate over
 dict_of_parameters = {
@@ -41,7 +44,7 @@ dict_of_parameters = {
 }
 
 # Create Grid object
-grid = Grid(cities, dict_of_parameters)
+grid = Grid(opt, dict_of_parameters)
 
 # Run grid search
 best_result, best_parameters = grid.iterate()
