@@ -22,8 +22,12 @@ import numpy as np
 # Define cities
 cities = np.array([[1, 2], [3, 4], [5, 6], [7, 8]])
 
-# Create Optimization object
-opt = Optimization(cities)
+# Create Optimization object with a 2 column array of cities (x and y coordinates). 
+# Optionally, add the shortest distance if known.
+opt = Optimization(cities_array=cities, ROUTE_MIN_DISTANCE=22)
+
+# Or add the path to the .tsp file
+opt = Optimization(file_path="YOUR_PATH")
 
 # Run optimization
 opt.optimize()
@@ -55,12 +59,17 @@ best_result, best_parameters = grid.iterate()
 - population_size: The size of the population for each generation (default is 20).
 - generations: The number of generations to run the optimization for (default is 100).
 - show_distances: If set to True, the distances will be printed (default is False).
+- save_distances_at: Creates a .txt file with the distances by generation at the given path.
 - plot_distances: If set to True, the evolution of distances through the generations will be plotted (default is False).
+- save_distances_plot_at: Creates an image file with the evolution of distances through generations at the path given. 
 - plot_route: If set to True, the route will be plotted (default is False).
+- save_route_plot_at: Creates an image file with the route in 2D, at the given path.
 - selection_method: The method used for selection (default is "tournament").
 - tournament_size: The size of the tournament for selection (default is 3).
 - crossover_method: The method used for crossover (default is "order").
 - mutation_method: The method used for mutation (default is "swap").
 - mutation_rate: The rate of mutation (default is 0.01).
-- mutation_rate_increase: If set to True, the mutation rate
+- mutation_rate_increase: If set to True, the mutation rate will increase when the shortest distance doesn't vary after "number_of_generations_to_increase".
+- number_of_generations_to_increase: Number of generations without change in the shortest distance of each generation for the mutation rate to increase.
+- mutation_rate_increase_by: Amount that the mutation rate increases.
 
