@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/Genetic_Project.egg-info/PKG-INFO
+src/Genetic_Project.egg-info/SOURCES.txt
+src/Genetic_Project.egg-info/dependency_links.txt
+src/Genetic_Project.egg-info/requires.txt
+src/Genetic_Project.egg-info/top_level.txt
+src/Optimization/Grid.py
+src/Optimization/Optimization.py
+src/Optimization/__init__.py

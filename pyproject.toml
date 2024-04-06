@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Genetic-Project"
+version = "0.0.1-dev"
+authors = [
+    {name = "Jaruba20", email = "fcosalesjavier@gmail.com"}
+]
+description = "Genetic algorithm to solve the tsp problem"
+readme = "README.md"
+
+requires-python = ">=3.10, <3.12"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha"
+]
+
+dependencies = [
+    "numpy",
+    "matplotlib",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Jaruba20/Genetic-Project"
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black", 
+    "ruff",
+    "isort",
+]
