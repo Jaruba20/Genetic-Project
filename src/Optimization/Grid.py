@@ -1,6 +1,5 @@
-from Optimization import Optimization
 import itertools
-
+from Optimization import Optimization
 
 class Grid:
     """Class to iterate over different parameters of the Optimization class and obtain the best results."""

@@ -1,7 +1,6 @@
+import matplotlib.pyplot as plt
 import numpy as np
 import random
-import matplotlib.pyplot as plt
-
 
 class Optimization:
     def __init__(self, file_path: str = None, cities_array: np.array = None, ROUTE_MIN_DISTANCE: float = 0) -> None:

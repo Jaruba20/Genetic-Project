@@ -1,6 +1,6 @@
 # Genetic Optimization Algorithm (under development)
 
-This library, inspired by Scikit_Learns's machine learning modules, provides a class `Optimization` for solving optimization problems using a genetic algorithm, particularly focused (for the moment) for the Traveling Salesman Problem (TSP).
+This library, inspired by Scikit_Learns's machine learning modules, provides a class `Optimization` for solving optimization problems using a genetic algorithm, particularly focused (for the moment) for the Traveling Salesman Problem (TSP). It also provides a `Grid` class, to automate the process of trying different parameters on the Optimization class.
 
 ## Features
 
